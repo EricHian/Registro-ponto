@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de Ponto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Ponto</h1>
+        <div class="clock">
+            <p id="clock-text">Carregando...</p>
+        </div>
+        <form id="ponto-form">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+            </div>
+            <button type="submit">Registrar Ponto</button>
+        </form>
+        <div id="registro">
+            <!-- Os registros de ponto serão exibidos aqui -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
